@@ -5,7 +5,14 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Desafio 14 Tabelas</title>
+</head>
 <style>
+    caption {
+        color: white;
+        background-color: black;
+        font-size: large;
+        font-family: cursive;
+    }
 body {
     font-family: Arial, Helvetica, sans-serif;
     text-align: center;
@@ -25,109 +32,95 @@ th, td {
     border: 1px solid;
     padding: 6px;
 }
-
-
-
+tr.cabeçalho {
+    color: white;
+    background-color: grey;
+}
+tr.Medias {
+    text-align: left;
+    color:  white;
+    background-color: grey;
+}
 
 </style>
-
-
-</head>
 
 
 <body>
    
     <table>
-<thead>
-<th colspan="6"> Médias por Áreas/Disciplina</th>
+        <caption> Cadastro </caption>
 
-</thead>
+<tr class="cabeçalho">
 
-<tbody>
-
-<tr>
-
-    <th rowspan="2">Area</th>
-    <th rowspan="2">Disciplina</th>
-    <th colspan="2">Notas</th>
-    <th rowspan="2">Média</th>
+    <th scope="col" rowspan="2">Area</th>
+    <th scope="col" rowspan="2"> Disciplinas</th>
+    <th scope="col" colspan="2" >Notas</th>
+    <th scope="col" rowspan="2"> Média</th>
     
     </tr>
-    <tr>
-
+    
+<tr class="cabeçalho">
     <th>nota1</th>
     <th>nota2</th>
-
-</tr>
+    
+    </tr>
 
 <tr>
-    <td rowspan="4">1</td>
-    <td>2</td>
-    <td>3</td>
-    <td>4</td>
-    <td>5</td>
-
+    <th rowspan="4">Exatas</th>
+    <td>Matemática</td>
+    <td>00</td>
+    <td>00</td>
+    <td>00</td>
 </tr>
 
 <tr>
     
-    <td>2</td>
-    <td>3</td>
-    <td>4</td>
-    <td>5</td>
-    
+    <td>Física</td>
+    <td>00</td>
+    <td>00</td>
+    <td>00</td>
 </tr>
 
 <tr>
     
-    <td>2</td>
-    <td>3</td>
-    <td>4</td>
-    <td>5</td>
+    <td>Química</td>
+    <td>00</td>
+    <td>00</td>
+    <td>00</td>
 </tr>
 
-<tr>
-    
-    <td>2</td>
-    <td>3</td>
-    <td>4</td>
-    <td>5</td>
-</tr>
 
 <tr>
-    <td colspan="4">Media de Exatas</td>
-    <td>5</td>
 
+    <td>Biologia</td>
+    <td>00</td>
+    <td>00</td>
+    <td>00</td>
+</tr>
+<tr class="Medias">
+    <th colspan="4">Medias de Exatas</th>
+    <td>00</td>
 </tr>
 <tr>
-    <td>1</td>
-    <td>2</td>
-    <td>3</td>
-    <td>4</td>
-    <td>5</td>
+    <th rowspan="2">Humanas</th>
+    <td>História</td>
+    <td>00</td>
+    <td>00</td>
+    <td>00</td>
 </tr>
 <tr>
-    <td>1</td>
-    <td>2</td>
-    <td>3</td>
-    <td>4</td>
-    <td>5</td>
+
+    <td>Geografia</td>
+    <td>00</td>
+    <td>00</td>
+    <td>00</td>
 </tr>
-<tr>
-    <td>1</td>
-    <td>2</td>
-    <td>3</td>
-    <td>4</td>
-    <td>5</td>
+<tr class="Medias">
+    <th colspan="4"> Media de Humanas</th>
+    <td>00</td>
 </tr>
 
 </tbody>
-
- 
-
-
-</body>
-
 
 
 </html>
